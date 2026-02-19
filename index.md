@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tsaowh.github.io</title>
+  <style>
+    :root{
+      --text:#111;
+      --muted:#555;
+      --link:#1a73e8;
+      --border:#e6e6e6;
+      --max:1100px;
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+      color:var(--text);
+      line-height:1.6;
+      background:#fff;
+    }
+    a{ color:var(--link); text-decoration:none; }
+    a:hover{ text-decoration:underline; }
+
+    .wrap{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:28px 18px 64px;
+    }
+
+    /* Top two-column */
+    .top{
+      display:grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap:28px;
+      align-items:start;
+      padding-bottom:18px;
+      border-bottom:1px solid var(--border);
+    }
+    @media (max-width: 900px){
+      .top{ grid-template-columns:1fr; }
+    }
+
+    h1{
+      margin:0 0 10px;
+      font-size:56px;
+      letter-spacing:-0.5px;
+      line-height:1.05;
+    }
+    .name-accent{
+      color:#0b57d0;
+      font-weight:800;
+    }
+    .role{
+      margin:6px 0;
+      font-size:20px;
+      font-weight:600;
+      color:var(--text);
+    }
+    .org{
+      margin:10px 0 18px;
+      font-size:20px;
+      font-weight:700;
+    }
+    .addr, .contact{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .contact{ margin-top:14px; }
+
+    /* Photo */
+    .photo{
+      width:100%;
+      border:1px solid var(--border);
+      border-radius:6px;
+      overflow:hidden;
+      background:#f7f7f7;
+    }
+    .photo img{
+      display:block;
+      width:100%;
+      height:auto;
+    }
+    .caption{
+      padding:10px 12px;
+      font-size:13px;
+      color:var(--muted);
+      border-top:1px solid var(--border);
+      background:#fff;
+    }
+
+    /* Sections */
+    section{ padding-top:26px; }
+    h2{
+      font-size:40px;
+      margin:24px 0 10px;
+      letter-spacing:-0.3px;
+    }
+    .rule{
+      height:1px;
+      background:var(--border);
+      margin:10px 0 14px;
+    }
+    .para{
+      font-size:18px;
+      color:#222;
+      max-width: 78ch;
+      margin:0 0 14px;
+    }
+    ul{
+      margin:8px 0 0 20px;
+      padding:0;
+      font-size:18px;
+    }
+    li{ margin:8px 0; }
+
+    footer{
+      margin-top:46px;
+      padding-top:18px;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- Top: left text + right photo -->
+    <div class="top">
+      <div>
+        <h1>
+          Tsao Wen Hao
+        </h1>
+
+        <div class="role">Analyst</div>
+        <div class="org1">Department of General Development</div>
+
+        <div class="org2">Kinmen County Government</div>
+
+        <p class="addr">
+          Kinmen, Taiwan
+        </p>
+
+        <p class="contact">
+          E-mail: <a href="mailto:whtsao0902@mail.kinmen.gov.tw">whtsao0902@mail.kinmen.gov.tw</a><br />
+        </p>
+      </div>
+
+      <div class="photo">
+        <!-- 把 profile.jpg 換成你的照片檔名（放在同一層） -->
+        <img src="Pasted image 20260219183003.png" alt="Profile photo" />
+        <div class="caption"></div>
+      </div>
+    </div>
+
+    <!-- Bio -->
+    <section id="bio">
+      <h2>Bio</h2>
+      <div class="rule"></div>
+
+      <p class="para">
+        I received my B.S. in Computer Science (2008–2012) and M.S. in Multimedia Engineering (2012–2014)
+        from National Chiao Tung University (now National Yang Ming Chiao Tung University).
+        In 2015, I was honored as a Phi Tau Phi member of the NCTU Chapter.
+      </p>
+
+      <p class="para">
+        In the same year (2015), after passing Taiwan’s Local Government Civil Service Special Examination
+        (Information Processing), I began serving in the Penghu County Government.
+      </p>
+
+      <p class="para">
+        In 2017, I was admitted to Ph.D. programs in Electrical Engineering at both National Tsing Hua University
+        and National Chiao Tung University. However, in 2020, after careful reflection, I chose to withdraw,
+        recognizing that my enduring intellectual interests lay beyond pure coding and technical specialization.
+      </p>
+
+      <p class="para">
+        In 2022, after passing Taiwan’s Senior Civil Service Examination (Information Processing), I continued
+        my public service career at the Kinmen County Government. In 2024, I again passed the Senior Civil Service
+        Examination in the same category but declined reassignment, choosing to remain in Kinmen.
+      </p>
+
+      <p class="para">
+        While remaining committed to public service, I have continued to pursue broader intellectual development.
+        I aim to integrate my background in computer engineering with legal inquiry. I am currently transitioning
+        toward legal studies, with the long-term goal of engaging in technology law.
+      </p>
+
+      <p class="para">
+        <a href="https://github.com/tsaowh" target="_blank" rel="noopener">This space（GitHub）</a> documents my ongoing studies, reflections, and explorations at the intersection of engineering,
+        governance, and law.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="Education">
+      <h2>Education</h2>
+      <div class="rule"></div>
+      <ul>
+        <li>2008–2012   B.S., Department of Computer Science and Information Engineering National Chiao Tung University (now National Yang Ming Chiao Tung University)</li>
+        <li>2012–2014   M.S., Institute of Multimedia Engineering National Chiao Tung University (now National Yang Ming Chiao Tung University)</li>
+      </ul>
+    </section>
+
+    <!-- Civil Service Career -->
+    <section id="Civil Service Career">
+      <h2>Civil Service Career</h2>
+      <div class="rule"></div>
+      <ul>
+        <li>2015-2017   Passed Taiwan’s Local Government Civil Service Special Examination
+        (Information Processing), served at Penghu County Government</li>
+        <li>2022-now   Passed Taiwan’s Senior Civil Service Examination (Information Processing), serving at Kinmen County Government</li>
+      </ul>
+    </section>
+
+    <!-- Honor -->
+    <section id="Honor">
+      <h2>Honor</h2>
+      <div class="rule"></div>
+      <ul>
+        <li>2015   Honorary Member, Phi Tau Phi Scholastic Honor Society National Chiao Tung University Chapter</li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="y"></span> tsaowh · Powered by GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
